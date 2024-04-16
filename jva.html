@@ -1,0 +1,112 @@
+<header>
+    <h1>cuong</h1>
+</header>
+<!-- bien kieu du lieu -->
+<!-- <script>
+    var ten = "cuong"
+    var tuoi = 18
+    ten = window.prompt("cuong")
+    ten = "I Love" + ten
+    tuoi = tuoi + 1
+    document.write(ten)
+    document.write(tuoi)
+</script> -->
+
+<!-- cau  truc if-else -->
+<!-- <script>
+    var tuoi = 0
+    tuoi = parseInt(window.prompt("nhap tuoi:"))
+    if (tuoi >= 16){
+        document.write("ok")
+    }else {
+        document.write("rut lui")
+    }
+    
+</script> -->
+<!-- cau truc lap -->
+<!-- <script>
+    var tuoi = 0
+    tuoi = parseInt(window.prompt("nhap tuoi:"))
+    for(var i = 0; i < 10; i++){
+        document.write("nam nay em", tuoi, "tuoi.<br>")
+    }
+
+</script> -->
+<!-- kieu object -->
+<!-- <script>
+    var co_hang_xom = {
+        ten: "lan",
+        tuoi: 18,
+        hon_nhan: false,
+        dia_chi: {
+            quan: "go vap",
+            phuong: "phuong 5"
+        }
+    }
+    document.write('co_hang_xom.dia_chi.quan')
+ 
+   
+</script> -->
+
+<!-- kieu function -->
+<!-- <script>
+    var co_hang_xom = {
+        ten: "lan",
+        tuoi: 18,
+        hon_nhan: false,
+        dia_chi: {
+            quan: "go vap",
+            phuong: "phuong 5"
+        }
+    }
+    var tinh_tuoi = function(nam_sinh) {
+        //var nam_sinh = parseInt(window.prompt("nhap nam sinh:"))
+        tuoi = 2023 - nam_sinh
+       
+        return tuoi
+    }
+   document.write(tinh_tuoi(2000), '<br>')
+   document.write(tinh_tuoi(1996), '<br>')
+</script> -->
+<!-- kieu array -->
+<!-- <script>
+    var a =[123, true, "lan", "cuong", "tram", "tam"]
+    //a.push("teo")
+    //a.pop()
+    a[2] = "hong"
+    document.write(a)
+</script> -->
+<!-- kieu String -->
+<!-- <script>
+    var s = 'phan 12 45'
+    document.write(s.length)
+</script> -->
+<!-- DOM -->
+<!-- Nhap ten: <input  id="input" value>
+<br>
+<button onclick="xin_chao()">ok</button>
+<div id="loi_chao">
+
+</div>
+<script>
+    var xin_chao = function() {
+       var ten = document.getElementById('input').value
+       var loi_chao = 'xin_chao  '  + ten
+       document.getElementById("loi_chao").innerHTML = loi_chao
+       //document.write(loi_chao)
+    }
+</script> -->
+<!-- co che bat dong bo -->
+<div id="loi_chao"></div>
+<script>
+    var thong_bao = function(){
+        document.getElementById('loi_chao').innerHTML += 'het gio <br>'
+    }
+    setTimeout(thong_bao, 3000)
+    document.getElementById('loi_chao').innerHTML += 'xin chao <br>'
+    localStorage.ten = 'cuong phan'
+    localStorage.diachi = 'hcm'
+</script>
+
+
+<!-- luu tru du lieu data local storage -->
